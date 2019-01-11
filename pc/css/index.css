@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+/* css reset */
+html,body,div,ul,li,dl,dt,dd,p,img,h1,h2,h3,h4,h5,h6{margin: 0;padding: 0;font-family: "微软雅黑", "黑体", "宋体", sans-serif;font-size: 14px;}
+li{list-style: none;}
+a{text-decoration: none;font-family: "微软雅黑", "黑体", "宋体", sans-serif;font-size: 14px;}
+em{font-style: normal;}
+img{vertical-align: middle;border:0;}
+
+
+/* css public */
+.wrap{width: 1052px;min-width: 1052px;}
+.conDiv{min-height: 500px;position: relative;}
+.conDiv .wrap{position: absolute;left: 50%;margin-left: -526px;}
+.tabList{position: fixed;width: 14px;height: 80px;top: 50%;right:88px;margin-top: -40px;z-index: 10;}
+.tabList li{padding: 3px 0;}
+.tabList li a{display: block;width: 10px;height: 10px;border: 2px solid #fff;border-radius: 50%;}
+.tabList .active a,.tabList li a:hover{background-color: #fff;}
+
+.tabListB li a{border-color: #4fd2be;}
+.tabListB .active a,.tabListB li a:hover{background-color: #4fd2be;}
+
+
+
+
+/* css content */
+.header{width:100%;height: 84px;background-color: #eaf6f6;position: fixed;left: 0;top: 0;z-index: 6;}
+.header .wrap{margin: 0 auto;}
+.header h1{height: 42px;padding: 20px 4px;float: left;}
+.header h1 img{height: 42px;}
+.header .nav{float: right;padding-top:33px;}
+.header .navList{float: left;}
+.header .navList li{float: left;padding-right:25px;}
+.header .navList a{float: left;line-height: 22px;color:#6e757d;padding: 0 5px;font-size: 18px;}
+.header .nav .line{width: 2px;height: 18px;background-color: #6e757d;float: left;margin-top: 3px;}
+.header h3{float: left;padding: 2px 18px;}
+.header h3 a{float: left;line-height: 18px;color: #6e757d;padding: 0 12px;border:1px solid #6e757d;border-radius: 4px;font-size: 14px;}
+.header .active a,.header .navList a:hover{color:#4FD2BE;}
+.header h3 a:hover,.header h3.active a{background-color: #4fd2be;border-color: #4fd2be;color:#fff;}
+
+/* 第一屏 */
+.con1{background-color: #4fd2be;}
+.con1 .wrap{height: 498px;margin-top: -190px;top: 47%;}
+.con1 .conText{width:356px;float: left;margin-left: 166px;padding-top: 82px;}
+.con1 .conText h2{font-size: 70px;color: #fff;line-height: 90px;}
+.con1 .conText p{line-height: 60px;font-size: 38px;color: #fff;margin-bottom: 55px;}
+.con1 .conDown{height: 125px;}
+.con1 .conDown img{width: 125px;margin-right: 46px;float: left;}
+.con1 .conDown a{float: left;height: 52px;width: 183px;}
+.con1 .conDown .downIos{background: url("../img/download-apple.png") no-repeat;background-size: 100% auto;margin-bottom: 20px;}
+.con1 .conDown .downAnd{background: url("../img/download-android.png") no-repeat;background-size: 100% auto;}
+.con1 .conImg{float: right;height: 498px;margin-right: 89px;}
+
+/* 第二屏 产品介绍 */
+.con2 .wrap{height: 444px;top: 53%;margin-top: -222px;}
+.con2 li{float: left;width: 244px;margin:0 52px;}
+.con2 img{width: 244px;margin-bottom: 40px;}
+.con2 h4{font-size: 32px;line-height: 82px;color: #2f2f2f;text-align: center;}
+.con2 p{font-size: 26px;line-height: 40px;color:#838383;text-align: center;padding: 0 15px;}
+
+/* 第三屏 繁星特点 */
+.con3{background-color: #4fd2be;}
+.con3 .wrap{height: 450px;top: 50%;margin-top: -225px;}
+.con3 .titleList{}
+.con3 .titleList li{display: none;}
+.con3 .titleList h3{font-size: 72px;color: #fff;line-height: 92px;margin-bottom: 35px;text-align: center;}
+.con3 .titleList p{font-size: 24px;line-height: 44px;color: #fff;margin-bottom: 124px;text-align: center;}
+.con3 .imgList{height: 156px;}
+.con3 .imgList li{float: left;height: 156px;width: 156px;margin: 0 53px;
+    transition: background-size 0.2s;
+    -moz-transition: background-size 0.2s;	/* Firefox 4 */
+    -webkit-transition: background-size 0.2s;	/* Safari 和 Chrome */
+    -o-transition: background-size 0.2s;}
+.con3 .imgList .img1{background:url("../img/show-tab-pic-1.png") no-repeat center bottom;background-size: 140px;}
+.con3 .imgList .img2{background:url("../img/show-tab-pic-2.png") no-repeat center bottom;background-size: 140px;}
+.con3 .imgList .img3{background:url("../img/show-tab-pic-3.png") no-repeat center bottom;background-size: 140px;}
+.con3 .imgList .img4{background:url("../img/free.png") no-repeat center bottom;background-size: 140px;}
+.con3 .imgList li:hover{background-size: 156px;}
+
+/* 第四屏 公司简介*/
+.con4 .conImg{width: 100%;}
+.con4 .conImg img{width: 100%;display: block;}
+.con4 .intro{width: 1000px;margin:40px auto;font-size: 24px;color: #2f2f2f;line-height:48px;}
+.con4 .intro li{font-size: 24px;color: #2f2f2f;line-height: 48px;height: 48px;}
+.con4 .intro li span{float: left;width: 7px;height: 7px;border-radius: 50%;background-color: #4FD2BE;margin-top: 20px;margin-right: 10px;}
+.con4 .intro li em{float: left;}
+
+/* 页面底部 */
+.footer{height: 60px;background-color: #4c4c4c;padding: 10px 0;}
+.footer p{text-align: center;line-height: 30px;color: #fff;}
+
+
+/* 联系我们--头部 */
+.banner img{width: 100%;margin-top: 74px;}
+.conWrap{width: 1000px;min-width: 1000px;overflow: hidden;margin: 0 auto;margin-bottom: 100px;}
+.conWrap h2{font-size: 30px;font-weight: normal;line-height: 60px;background-color: #4FD2BE;color: #fff;text-indent: 44px;margin-bottom: 30px;}
+.conWrap .title{font-size: 24px;line-height: 2;padding-left: 44px;}
+.conWrap .title span{color: #4fd2be;}
+
+/* 联系我们--招聘职位 */
+.workList{width: 1000px;margin-top: 80px;overflow: hidden;padding-left: 44px;}
+.workList li{float: left;width: 445px;margin-right: 40px;background-color: #fff;overflow: hidden;}
+.workList li .icon{float: left;width: 84px;}
+.workList li dl{float: right;width: 326px;padding-right: 28px;margin-bottom: 15px;}
+.workList li dt{font-size: 20px;padding-bottom: 10px;padding-top: 36px;}
+.workList li dd{font-size: 12px;padding-bottom: 10px;line-height: 18px;}
+.workList li .more{float: left;width: 445px;text-align: center;color: #4fd2be;font-size: 12px;}
+
+/* 联系我们--联系信息 */
+.linkUs p{overflow: hidden;margin: 40px 0;}
+.linkUs p img{float: left;}
+.linkUs p .linkImg1{width: 50%;}
+.linkUs p .linkImg2{width: 49%;}
+.linkUs .linkInfo dt,.linkUs .linkInfo dd{font-size: 24px;line-height: 2;padding-left: 44px;color: #2f2f2f;}
+
+
+/* 适配屏幕大小，显示合适的文字大小，小屏显示文字大小如下 */
+@media screen and (max-width: 1500px){
+    .conWrap{  margin-bottom: 60px;}
+    .con4 .intro{font-size: 18px; line-height: 36px;}
+    .con4 p.intro{margin-bottom: 20px;}
+    .con4 ul.intro{margin-top: 0;}
+    .con4 .intro li{font-size: 18px;line-height: 36px;height: 36px;}
+    .linkUs .linkInfo dt,.linkUs .linkInfo dd{font-size: 18px;}
+    .conWrap .title{  font-size: 20px;}
+    .workList{margin-top: 60px;}
+    .workList li dt{font-size: 18px;}
+}
